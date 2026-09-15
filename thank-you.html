@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order received — Sweet Pot LA</title>
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --orange:#C4571A;
+  --gold:#8B7335;
+  --gold-lt:#D4B96A;
+  --cream:#F0EBE0;
+  --green:#2C3B1F;
+  --charcoal:#1C1A16;
+  --white:#FAF7F2;
+  --font:'Cormorant Garamond',Georgia,serif
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--cream);-webkit-font-smoothing:antialiased;margin:0;padding:0}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:1px solid rgba(139,115,53,.2)}
+.ni{padding:14px 40px;display:flex;align-items:center;justify-content:space-between}
+.nb{display:flex;flex-direction:column;gap:2px}
+.nl{font-size:1.4rem;font-weight:500;color:var(--green)}
+.nl em{font-style:italic;color:var(--orange)}
+.nt{font-size:.72rem;font-style:italic;color:var(--gold);letter-spacing:.06em}
+.nlinks{display:flex;gap:24px;align-items:center}
+.nlinks a{font-size:.9rem;font-style:italic;color:var(--green);text-decoration:none;transition:color .2s}
+.nlinks a:hover{color:var(--orange)}
+
+/* CONFIRMATION */
+.confirm-wrap{max-width:600px;margin:0 auto;padding:120px 40px;text-align:center}
+.confirm-wrap h1{font-size:clamp(2.4rem,5vw,3.2rem);font-weight:400;font-style:italic;color:var(--green);line-height:1.15;margin-bottom:20px}
+.confirm-wrap p{font-size:1.15rem;font-weight:300;color:var(--charcoal);line-height:1.8;max-width:46ch;margin:0 auto}
+.zbox{margin-top:56px;padding-top:48px;border-top:1px solid rgba(139,115,53,.25)}
+.zbox h2{font-size:1.3rem;font-weight:500;font-style:italic;color:var(--gold);margin-bottom:14px}
+.zbox p{font-size:1.02rem;color:var(--charcoal);opacity:.8}
+.qr{margin:28px auto 0;width:180px;height:180px;border:1px dashed rgba(139,115,53,.4);display:flex;align-items:center;justify-content:center;text-align:center;font-size:.9rem;font-style:italic;color:var(--gold);padding:16px}
+.back{display:inline-block;margin-top:48px;font-size:1rem;font-style:italic;color:var(--orange);border-bottom:1px solid var(--orange);padding-bottom:2px;text-decoration:none}
+.back:hover{color:var(--gold);border-color:var(--gold)}
+
+@media(max-width:640px){
+  .confirm-wrap{padding:80px 24px}
+}
+
+/* FOOTER */
+footer{background:var(--green);padding:56px 40px 40px}
+.fi{max-width:1000px;margin:0 auto}
+.ft{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap;margin-bottom:36px}
+.flogo{font-size:1.5rem;font-weight:500;color:var(--cream)}
+.flogo em{font-style:italic;color:#E8A87C}
+.ftag{font-size:.72rem;font-style:italic;color:rgba(240,235,224,.7);margin-top:4px}
+.flinks{display:flex;gap:24px;flex-wrap:wrap}
+.flinks a{font-size:.9rem;font-style:italic;color:rgba(240,235,224,.85);text-decoration:none;transition:color .2s}
+.flinks a:hover{color:var(--orange)}
+.frule{height:1px;background:rgba(240,235,224,.1);margin-bottom:24px}
+.fquote{font-size:.95rem;font-style:italic;font-weight:300;color:rgba(240,235,224,.8);line-height:1.9;max-width:560px;margin-bottom:24px}
+.fcopy{font-size:.7rem;color:rgba(240,235,224,.5);letter-spacing:.08em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="ni">
+    <div class="nb">
+      <div class="nl">Sweet<em>Pot</em>LA</div>
+      <div class="nt">Autumn is here.</div>
+    </div>
+    <div class="nlinks">
+      <a href="/#shop">Shop</a>
+      <a href="/#care">Care</a>
+    </div>
+  </div>
+</nav>
+
+<div class="confirm-wrap">
+  <h1>Your order request is in.</h1>
+  <p>We'll confirm availability and your delivery date by email, usually within one business day.</p>
+
+  <div class="zbox">
+    <h2>Once we confirm, complete payment by Zelle</h2>
+    <p>Scan the code below or send payment to the Zelle details in our confirmation email. Please wait for confirmation before sending payment.</p>
+    <div class="qr">Zelle QR code goes here</div>
+  </div>
+
+  <a class="back" href="/">Back to Sweet Pot LA</a>
+</div>
+
+<footer>
+  <div class="fi">
+    <div class="ft">
+      <div>
+        <div class="flogo">Sweet<em>Pot</em>LA</div>
+        <div class="ftag">Autumn is here.</div>
+      </div>
+      <div class="flinks">
+        <a href="https://sweetpotla.com">sweetpotla.com</a>
+        <a href="mailto:hello@sweetpotla.com">hello@sweetpotla.com</a>
+      </div>
+    </div>
+    <div class="frule"></div>
+    <p class="fcopy">Sweet Pot LA &middot; Los Angeles, California &middot; Payment by Zelle &middot; Local delivery only</p>
+  </div>
+</footer>
+
+</body>
+</html>
